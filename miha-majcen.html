@@ -336,11 +336,6 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
       function spremeniSliko(x) {
         trenutna+=x;
-        if(trenutna>dolzina){
-          trenutna=0;
-        }if(trenutna<0){
-          trenutna=dolzina;
-        }
         document.getElementById["slike"].src="slike[trenutna]";
 
         return false;
