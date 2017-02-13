@@ -372,7 +372,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 
         <p class="gumb" onclick="gumb(-1)">Previous</p>
-        <p class="gumb" onclick="gumb(1)">Next</p>
+        <p class="gumbR" onclick="gumb(1)">Next</p>
 
 
       </div>
@@ -395,8 +395,11 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     margin: 4px 2px;
     cursor: pointer;
 }
+.gumbR {
+  right:0;
+}
 
-.gumb:hoover {
+.gumb:hover, .gumbR:hover {
   background-color: ##00a99d;
   transition: 100ms, ease;
 
