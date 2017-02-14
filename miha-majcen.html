@@ -310,7 +310,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 
 		<div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded">
-
+<p><b>Since we don't like CVs Miha convinced us with this presentation</b></p>
       <div class="slide">
         <img class="slideImg"  src="1-01.jpg" style="width:10242px;height:768px;">
         <img class="slideImg"  src="1-02.jpg" style="width:10242px;height:768px;">
@@ -408,35 +408,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
       </style>
 
-        <script>
-        var indexImg = 1;
-        showImg(indexImg);
-
-        function gumb(n) {
-          showImg(indexImg += n);
-        }
-
-        function showImg(n) {
-          var x = document.getElementsByClassName('slideImg');
-          if (n < 1) {
-            indexImg = x.length;
-          }
-          if (n > x.length) {
-            indexImg = 1;
-          }
-          for (var i = 0; i < x.length; i++) {
-            x[i].style.display = 'none';
-          }
-          x[indexImg-1].style.display = 'block';
-        }
-
-
-        </script>
 
 
 
 
-<p><b>Since we don't like CVs Miha convinced us with this presentation</b></p>
+
+
 
 <p><b>When is your availbility?</b></p>
 
@@ -572,6 +549,30 @@ if (typeof(FB) == 'undefined') {
 <!--//--><![CDATA[//><!--
 var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://res1.hubraum.telekom.com/" : "http://res1.hubraum.telekom.com/");_paq.push(["setSiteId", "1"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(["trackPageView"]);_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"piwik.js";s.parentNode.insertBefore(g,s);})();
 //--><!]]>
+</script>
+<script>
+var indexImg = 1;
+showImg(indexImg);
+
+function gumb(n) {
+  showImg(indexImg += n);
+}
+
+function showImg(n) {
+  var x = document.getElementsByClassName('slideImg');
+  if (n < 1) {
+    indexImg = x.length;
+  }
+  if (n > x.length) {
+    indexImg = 1;
+  }
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = 'none';
+  }
+  x[indexImg-1].style.display = 'block';
+}
+
+
 </script>
 </body>
 </html>
